@@ -18,39 +18,3 @@ In your `.env` file, set the following values:
 ### Function Parameters
 
 This Function expects the incoming request to be a messaging webhook. The parameters that will be used are `From` and `Body`.
-
-
-## Create a new project with the template
-
-1. Install the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart#install-twilio-cli)
-2. Install the [serverless toolkit](https://www.twilio.com/docs/labs/serverless-toolkit/getting-started)
-
-```shell
-twilio plugins:install @twilio-labs/plugin-serverless
-```
-
-3. Initiate a new project
-
-```
-twilio serverless:init example --template=2-way-sms-forwarding && cd verify-sample
-```
-
-4. Start the server with the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart):
-
-```
-twilio serverless:start
-```
-
-5. Open the web page at https://localhost:3000/index.html and enter your phone number to test
-
-ℹ️ Check the developer console and terminal for any errors, make sure you've set your environment variables.
-
-## Deploying
-
-Deploy your functions and assets with either of the following commands. Note: you must run these commands from inside your project folder. [More details in the docs.](https://www.twilio.com/docs/labs/serverless-toolkit)
-
-With the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart):
-
-```
-twilio serverless:deploy
-```
